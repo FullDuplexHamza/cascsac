@@ -1,0 +1,18 @@
+kind: pipeline
+type: exec
+name: default
+
+platform:
+  os: linux
+  arch: amd64
+
+steps:
+- name: build
+  commands:
+    - docker build -t drone-tests .
+
+#- name: run
+#  commands:
+#    - cd /var/docker/sdcmm
+#    - docker-compose stop lifecycle lifecycle-worker
+#    - docker-compose up -d --build lifecycle lifecycle-worker

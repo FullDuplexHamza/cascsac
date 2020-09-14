@@ -13,6 +13,6 @@ steps:
 
 #- name: run
 #  commands:
-#    - cd /var/docker/sdcmm
-#    - docker-compose stop lifecycle lifecycle-worker
-#    - docker-compose up -d --build lifecycle lifecycle-worker
+#    - cd /var/docker/drone-tests
+#    - docker-compose stop drone-tests
+#    - docker-compose up -d drone-test
